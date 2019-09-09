@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Send/Read JSON Request</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h3 id="head">Send and Received JSON Request Example</h3>
+    </header>
+<section>
+    <div class="fom">
+        <form name="myForm">
+        <input type="text" name="ip_address" placeholder="Enter IPv4 Address"/> <br>
+        <input type="button" id="Save" onclick="f1()" value="Check"/>
+        
+       </form>
+    </div>
+<div class="main">
+        <div class="tab">
+          <table>  
+              <tr>
+                  <th>Parameter</th>
+                  <th>Result</th>
+              </tr>
+            <tr>
+                <td>StatusCode :</td>
+                <td id="statusCode"></td>
+            </tr>
+            <tr>
+                <td>StatusMessage :</td>
+                <td id="statusMessage"></td>
+            </tr>
+            <tr>
+                <td>IP Address :</td>
+                <td id="ipAddress"></td>
+            </tr>
+            <tr>
+                <td>CountryCode :</td>
+                <td id="countryCode"></td>
+            </tr>
+            <tr>
+                <td>CountryName :</td>
+                <td id="countryName"></td>
+            </tr>
+            <tr><td>RegionName :</td>
+                <td id="regionName"></td>
+            </tr>
+            <tr>
+                <td>CityName :</td>
+                <td id="cityName"></td>
+            </tr>
+            <tr><td>ZipCode :</td>
+                <td id="zipCode"></td>
+            </tr>
+            <tr>
+                <td>Latitude :</td>
+                <td id="latitude"></td>
+            </tr>
+            <tr>
+                <td>Longitude :</td>
+                <td id="longitude"></td>
+            </tr>
+            <tr>
+                <td>TimeZone :</td>
+                <td id="timeZone"></td>
+            </tr> 
+        </table>
+        </div>
+            
+        <div id="map">
+        </div>
+</div>
+
+</section>
+<footer>
+    <div id="last"><h3>All Right Reserved @ Ankit Kumar</h3></div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
